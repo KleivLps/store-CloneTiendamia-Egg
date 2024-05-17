@@ -1,0 +1,73 @@
+.card-product {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--white);
+    border: 2px solid var(--gray);
+    display: block;
+    cursor: pointer;
+  }
+  
+  .card-product-image {
+    width: 180px;
+    display: block;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .card-product-info {
+    background-color: var(--gray);
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
+  
+  .card-product-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+  }
+  
+  .card-product-color {
+    font-size: .8rem;
+  }
+  
+  .card-product-price {
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .card-product-current-price {
+    font-size: 1.2rem;
+  }
+  
+  .card-product-discount {
+    color: var(--green);
+    font-size: .9rem;
+  }
+  
+  .card-product-tax {
+    font-size: .75rem;
+  }
+  
+  .card-product > div {
+    position: relative;
+  }
+  
+  .btn-add-favorite,
+  .btn-remove-favorite {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+    cursor: pointer;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/93d96ff723.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Tienda Virtual</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="./index.html" class="header-logo">
+        <img class="header-logo-img" src="./assets/tiendamia-logo.svg" width="218" alt="Logo store" />
+      </a>
+      <form class="header-form">
+        <input class="header-input" type="text" placeholder="Buscar..." id="search">
+    </form>
+        <div class="header-social" id="socialMedia">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <a href="#" id="button-header-favorite">
+            <i class="fas fa-heart"></i>
+            <span class="counter-favorite">0</span>
+          </a>
+          <a href="#" id="iconoUsuario" class="iconoUsuario">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="./cart.html" id="iconoCarrito" class="iconoCarrito hidden">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="counter-cart">0</span>
+          </a>
+          <a href="#" class="iconoPerfil hidden" id="iconoPerfil" >
+            <i class="fa-solid fa-check-double"></i>
+          </a> 
+      </div>
+      </ul>
+    </div>
+
+    <div class="container-list-favorites">
+      <div class="header-favorite">
+        <h3>Mis Favoritos</h3>
+        <i class="fa-solid fa-xmark" id="btn-close"></i>
+      </div>
+      <hr />
+      <div class="list-favorites">
+        <div class="card-favorite">
+          <p class="title">titulo1</p>
+          <p> S/100 </p>
+        </div>
+      </div>
+    </div>
+
+    <nav id="navbar">
+
+    </nav>
+  </header>
+  <section class="hero-section">
+    <article class="hero-title">
+      <span class="hero-span">tecnología</span>
+      <span class="hero-span">renovada</span>
+    </article>
+  </section>
+  <main>
+    <div class="product-container" id="products">
+      
+    </div>
+  </main>
+  <footer>
+
+    <div id="footer" class="footer-container"></div>
+
+    <div class="footer-copyright">Curso de HTML + CSS 2024</div>
+  </footer>
+  
+  <script src="./scripts/favorito.js"></script>
+  <script src="./scripts/online.js"></script>
+  <script src="./scripts/layout.js"></script>
+  <script src="./scripts/product.js"></script>
+  <script src="./scripts/productCards.js"></script>
+  <script src="./scripts/filterProducts.js"></script>
+  <script src="./scripts/productDetail.js"></script>
+  
+</body>
+
+</html>

@@ -1,21 +1,31 @@
-// Definición de los objetos rectángulo
-const rectangulo1 = { altura: 2, ancho: 3 };
-const rectangulo2 = { altura: 5, ancho: 7 };
-const rectangulo3 = { altura: 6, ancho: 4 };
-
-// Importa las funciones de los módulos
-import { perimetro } from './perimetro.js';
-import { area } from '/area.js';
-
-// Definición de los objetos rectángulo
-
-// Función para imprimir la tabla en la vista
-function imprimirTabla() {
-  console.log('Rectángulo\tAltura\tAncho\tPerímetro\tÁrea');
-  [rectangulo1, rectangulo2, rectangulo3].forEach(rect => {
-    console.log(`\t\t${rect.altura}\t${rect.ancho}\t${perimetro(rect)}\t\t${area(rect)}`);
-  });
+// Definición de los rectángulos
+const rectangulo1 = { ancho: 5, altura: 3 };
+const rectangulo2 = { ancho: 10, altura: 4 };
+const rectangulo3 = { ancho: 2, altura: 8 };
+// Funciones para calcular perímetro y área
+function calcularPerimetro(ancho, altura) {
+return 2 * (ancho + altura);
+}
+function calcularArea(ancho, altura) {
+return ancho * altura;
 }
 
-// Llamada a la función para imprimir la tabla
-imprimirTabla();
+// geometric.js
+import { Perimetro } from './perimetro.js';
+import { Area } from './area.js';
+import { rectangulos } from './rectangleData.js';
+function imprimirResultados() {
+const tabla = document.getElementById('resultado');
+rectangulos.forEach((rect, index) => {
+const fila = document.createElement('tr');
+fila.innerHTML = `
+<td>Rectángulo ${index + 1}</td>
+<td>${rect.ancho}</td>
+<td>${rect.altura}</td>
+<td>${calcularPerimetro(rect.ancho, rect.altura)}</td>
+<td>${Area(rect.ancho, rect.altura)}</td>
+`;
+tabla.appendChild(fila);
+});
+}
+document.addEventListener('DOMContentLoaded', imprimirResultados);

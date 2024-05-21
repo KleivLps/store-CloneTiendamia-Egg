@@ -1,3 +1,4 @@
-export function perimetro(rectangulo) {
-  return 2 * (rectangulo.altura + rectangulo.ancho);
-}
+// perimeter.js
+export function Perimetro(ancho, altura) {
+  return 2 * (ancho + altura);
+  }

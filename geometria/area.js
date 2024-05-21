@@ -1,5 +1,4 @@
-// Exporta la función de cálculo del área
-export function area(rectangulo) {
-    return rectangulo.altura * rectangulo.ancho;
+// area.js
+export function Area(ancho, altura) {
+  return ancho * altura;
   }
-  

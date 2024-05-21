@@ -116,7 +116,7 @@ function changePrice(event){
   //traer el selector del precio
   const priceSelector = document.querySelector("#price");
   //cambiar el precio total
-  priceSelector.innerHTML = `$${quantity * product.price}`;
+  priceSelector.innerHTML = `S/${quantity * product.price}`;
 }
 
 /**

@@ -41,3 +41,5 @@ const product6 = new Product("006", "LAPTOP ASUS G513RC-HN036W 15.6` AMD RYZEN 7
 
 //Creamos el array de los productos
 let products = [product1, product2, product3, product4, product5, product6];
+
+

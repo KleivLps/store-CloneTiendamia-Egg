@@ -1,4 +1,4 @@
-const btnsFavorite = document.querySelectorAll('.favorite');
+const btnsFavorite = document.querySelectorAll('.favorito');
 const products = document.querySelectorAll('.product-card');
 const counterFavorites = document.querySelector('.counter-favorite');
 
@@ -10,11 +10,11 @@ const listFavorites = document.querySelector('.list-favorites');
 let favorites = [];
 
 const updateFavoritesInLocalStorage = () => {
-	localStorage.setItem('favorites', JSON.stringify(favorites));
+	localStorage.setItem('favoritos', JSON.stringify(favorites));
 };
 
 const loadFavoritesFromLocalStorage = () => {
-	const storedFavorites = localStorage.getItem('favorites');
+	const storedFavorites = localStorage.getItem('favoritos');
 
 	if (storedFavorites) {
 		favorites = JSON.parse(storedFavorites);
@@ -103,6 +103,7 @@ btnsFavorite.forEach(button => {
 
 const btnClose = document.querySelector('#btn-close');
 const buttonHeaderFavorite = document.querySelector(
+	
 	'#button-header-favorite'
 );
 
